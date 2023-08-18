@@ -2,7 +2,7 @@ import { acceptHMRUpdate, defineStore } from 'pinia'
 import type { ApiAuthResponse, ApiDataResponse, Slide, User } from '~/types/api'
 
 export const useApiStore = defineStore('api', () => {
-  const apiBaseUrl = 'https://localhost:5001'
+  const apiBaseUrl = 'https://api.misakal.xyz/virtualpaperplane'
   const accessToken = ref('')
 
   const user: Ref<null | User> = ref(null)
